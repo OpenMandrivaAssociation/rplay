@@ -1,6 +1,6 @@
 %define name rplay
 %define version 3.3.2
-%define release %mkrel 5
+%define release %mkrel 6
 
 %define libname %{_lib}%{name}
 %define libnamedevel %{_lib}%{name}-devel
