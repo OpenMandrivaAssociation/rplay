@@ -1,0 +1,10 @@
+--- ./devrplay/devrplay.c.gnu	2005-11-15 07:06:26.351836743 +0100
++++ ./devrplay/devrplay.c	2005-11-15 07:06:44.047849925 +0100
+@@ -45,6 +45,7 @@
+ #ifdef linux
+ 
+ #include <sys/soundcard.h>
++#define __USE_GNU
+ #include <dlfcn.h>
+ #define REAL_LIBC RTLD_NEXT
+ 
