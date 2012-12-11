@@ -103,3 +103,37 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 %{_libdir}/*.a
 
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tvignaud@mandriva.com> 3.3.2-6mdv2010.0
++ Revision: 442757
+- rebuild
+
+* Sat Aug 02 2008 Thierry Vignaud <tvignaud@mandriva.com> 3.3.2-5mdv2009.0
++ Revision: 260318
+- rebuild
+
+* Mon Jul 28 2008 Thierry Vignaud <tvignaud@mandriva.com> 3.3.2-4mdv2009.0
++ Revision: 251470
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 3.3.2-2mdv2008.1
++ Revision: 140747
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sun Aug 13 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 08/13/06 21:36:07 (55853)
+- rebuild
+
+* Sun Aug 13 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 08/13/06 21:34:25 (55852)
+Import rplay
+
+* Tue Nov 15 2005 Olivier Thauvin <nanardon@mandriva.org> 3.3.2-1mdk
+- Initial contrib
+
