@@ -1,14 +1,10 @@
-%define name rplay
-%define version 3.3.2
-%define release %mkrel 6
-
 %define libname %{_lib}%{name}
 %define libnamedevel %{_lib}%{name}-devel
 
 Summary: A flexible network audio system
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name:    rplay
+Version: 3.3.2
+Release: 7
 Source0: %{name}-%{version}.tar.bz2
 Patch0: rplay-3.3.2-use-gnu.patch
 License: GPL
@@ -70,35 +66,18 @@ xpilot, xlockmore, xboing, fvwm, and ctwm.
 %install
 %makeinstall
 
-%post
-%_install_info %{name}.info
-%_install_info librplay.info
-%_install_info RPTP.info
-%_install_info RPLAY.info
-
-%preun
-%_remove_install_info %{name}.info
-%_remove_install_info librplay.info
-%_remove_install_info RPTP.info
-%_remove_install_info RPLAY.info
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc ChangeLog NEWS PORTING README README.linux TODO
 %{_bindir}/*
 %{_mandir}/*/*
 %{_infodir}/*
 
 %files -n %{libname}
-%defattr(-,root,root)
 %doc ChangeLog NEWS PORTING README README.linux TODO
 %{_libdir}/*.so
 
 %files -n %{libnamedevel}
-%defattr(-,root,root)
 %doc ChangeLog NEWS PORTING README README.linux TODO
 %{_includedir}/*
 %{_libdir}/*.a
