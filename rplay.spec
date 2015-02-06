@@ -4,7 +4,7 @@
 Summary: A flexible network audio system
 Name:    rplay
 Version: 3.3.2
-Release: 7
+Release: 8
 Source0: %{name}-%{version}.tar.bz2
 Patch0: rplay-3.3.2-use-gnu.patch
 License: GPL
