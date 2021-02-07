@@ -6,7 +6,7 @@ Name:    rplay
 Version: 3.3.2
 Release: 8
 Source0: %{name}-%{version}.tar.bz2
-Patch0: rplay-3.3.2-use-gnu.patch
+#Patch0: rplay-3.3.2-use-gnu.patch
 License: GPL
 Group: Sound
 Url: http://rplay.doit.org/
@@ -56,7 +56,7 @@ xpilot, xlockmore, xboing, fvwm, and ctwm.
 
 %prep
 %setup -q
-%patch0 -p0 -b .usegnu
+#patch0 -p0 -b .usegnu
 
 %build
 %configure
