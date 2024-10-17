@@ -9,7 +9,7 @@ Source0: %{name}-%{version}.tar.bz2
 Patch0: rplay-3.3.2-use-gnu.patch
 License: GPL
 Group: Sound
-Url: http://rplay.doit.org/
+Url: https://rplay.doit.org/
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires(pre): rpm-helper
 Requires(preun): rpm-helper
