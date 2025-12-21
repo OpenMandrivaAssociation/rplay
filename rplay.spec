@@ -14,6 +14,11 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires(pre): rpm-helper
 Requires(preun): rpm-helper
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 rplay is a flexible network audio system that allows sounds to be
 played to and from local and remote Unix systems.  Sounds can be
